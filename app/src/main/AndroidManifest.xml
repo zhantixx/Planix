@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".PlanixApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Planix"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ListTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EditTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CategoryDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TermsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.IntroActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

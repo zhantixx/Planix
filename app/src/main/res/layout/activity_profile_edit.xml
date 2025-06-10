@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@android:color/white">
+
+    <!-- Фиолетовый блок -->
+    <RelativeLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bcakground">
+
+        <!-- Кнопка назад -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="32dp"
+            android:src="@drawable/back"
+            android:contentDescription="Back"/>
+
+        <!-- Фото профиля по центру -->
+        <ImageView
+            android:id="@+id/editImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/profile"
+
+            android:scaleType="centerCrop"
+            android:background="@drawable/white_bg_top_corner"
+            android:padding="5dp"
+            android:contentDescription="Profile Image"/>
+
+        <!-- Иконка редактирования -->
+
+
+    </RelativeLayout>
+
+    <!-- Контент с прокруткой -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profildı öñdeu"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Login"
+                android:padding="12dp"
+                android:drawableStart="@drawable/name"
+                android:drawablePadding="12dp"
+                android:background="@drawable/text_bg"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/input_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:drawableStart="@drawable/address"
+                android:drawablePadding="12dp"
+                android:padding="12dp"
+                android:background="@drawable/text_bg"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="12dp"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:background="@drawable/text_bg"
+                android:layout_marginTop="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <Spinner
+                    android:id="@+id/country_code_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/country_codes" />
+
+                <EditText
+                    android:id="@+id/input_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Telefon nömırı"
+                    android:drawableStart="@drawable/phone"
+                    android:drawablePadding="12dp"
+                    android:inputType="phone"
+                    android:padding="12dp"
+                    android:background="@drawable/text_bg" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Saqtau"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_button"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

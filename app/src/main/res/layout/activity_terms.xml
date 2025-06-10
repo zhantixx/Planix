@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TermsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="**1. Кіріспе**
+
+Бұл құпиялылық саясаты біз, біз Planix,қолданба
+арқылы жиналған ақпаратты қалай өңдейтінімізді және
+қорғайтынымызды cипаттайды. Біз анонимділіктің
+маңыздылығын мойындаймыз және пайдаланушы-
+ларымыздың құпиялылығы барынша қорғалғанын
+қамтамасыз етеміз.
+
+**2. Жиналған ақпарат**
+
+Біз қолданбаны пайдалану және оның сапасын жақсарту
+үшін қажетті ең аз ақпаратты ғана жинаймыз. Бұған
+мыналар кіруі мүмкін:
+- Үлгі, операциялық жүйе нұсқасы және бірегей құрылғы
+идентификаторы сияқты құрылғыңыз туралы техникалық
+ақпарат.
+- Қолданбадағы пайдаланушы әрекеті және мүмкіндікті
+пайдалану статистикасы сияқты қолданбаны пайдалану
+туралы анонимді деректер.
+
+**3. Ақпаратты пайдалану**
+
+Біз жинақталған ақпаратты қолданбаны пайдалану және
+жақсарту мақсатында ғана пайдаланамыз. Сіздің келісім-
+іңізсіз біз сіздің жеке ақпаратыңызды үшінші тұлғаларға
+ашпаймыз, сатпаймыз немесе бермейміз.
+
+**4. Cookie саясаты**
+
+Біздің қолданба пайдаланушыларды қадағалау немесе
+жеке ақпаратты жинау үшін cookie файлдарын немесе
+ұқсас технологияларды пайдаланбайды.
+
+**5. Пайдаланушының анонимділігі**
+
+Біз қолданба пайдаланушыларымыз үшін максималды
+анонимділікті қамтамасыз етуге тырысамыз. Қолданба-
+ның негізгі функцияларын пайдалану үшін сізден жеке
+ақпаратты беруді талап етпейміз.
+
+**6. Қауіпсіздік**
+
+Біз сіздің анонимді ақпаратыңызды рұқсатсыз кіруден,
+пайдаланудан немесе жария етуден қорғау үшін тиісті
+қауіпсіздік шараларын қабылдаймыз.
+
+**7. Құпиялық саясатындағы өзгерістер**
+
+Біз құпиялылық саясатымызды өз қалауымыз бойынша
+өзгерту құқығын сақтаймыз. Кез келген өзгерістер осы
+қолданбада жарияланады.
+
+**8. Байланыстар**
+
+Құпиялық саясатымызға қатысты сұрақтарыңыз немесе
+ұсыныстарыңыз болса, Бейбітшілік 39 мекенжайы бойын-
+ша бізге хабарласыңыз.
+
+"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/backBtn2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paidalanuşy kelısımı"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/backBtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backBtn2"
+        app:layout_constraintTop_toTopOf="@+id/backBtn2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

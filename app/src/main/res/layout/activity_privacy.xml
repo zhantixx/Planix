@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PrivacyActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="
+
+Біз Planix ұсынған қосымшамызға қош келдіңіз. Біз сіздің
+жеке өміріңізді қорғауға үлкен мән береміз және қызметтеріміз
+бен ресурстарымызбен өзара әрекеттесу кезінде қауіпсіз
+және ыңғайлы тәжірибені қамтамасыз етуге міндеттенеміз. Бұл
+келісім біздің қолданбаны пайдаланған кезде жеке ақпара-
+тыңызды қалай жинайтынымызды, пайдаланатынымызды
+және қорғайтынымызды сипаттайды.
+
+**1. Жиналған ақпарат**
+
+Біз әртүрлі ақпарат түрлерін жинай аламыз, соның ішінде:
+- Сайтта тіркелу, нысандарды толтыру, сұрау салулар жіберу
+немесе қызметтерімізбен әрекеттесу кезінде бізге өз еркіңіз-
+бен беретін жеке ақпарат.
+- Қолданбамен әрекеттесуіңіз туралы ақпарат.
+- Трафикті талдау, пайдаланушыларды аутентификациялау
+және ұсынылатын қызметтердің сапасын жақсарту үшін cookie
+файлдары мен ұқсас технологияларды пайдалана отырып жи-
+налған ақпарат.
+
+**2. Ақпаратты пайдалану**
+
+Жиналған ақпаратты мыналар үшін пайдаланамыз:
+- Сізге біздің қызметтер мен ресурстарға қолжетімділікті қамта-
+масыз ету, сондай-ақ олардың функционалдығы мен қауіпсіз-
+дігін қамтамасыз ету.
+- Тәжірибеңізді жекелендіру және сізге сәйкес ақпарат пен
+ұсыныстар беру.
+- Қызметтеріміздің сапасын арттыру, тенденциялар мен
+пайдаланушылардың мінез-құлқын талдау және жаңа мүмкіндік-
+тер мен қызметтерді әзірлеу.
+
+**3. Ақпаратты ашу**
+
+Осы келісімде сипатталған немесе қолданыстағы заң талап
+ететін жағдайларды қоспағанда, біз сіздің жеке ақпара-
+тыңызды үшінші тұлғаларға сіздің келісіміңізсіз ашпаймыз.
+
+**4. Деректерді қорғау**
+
+Біз сіздің жеке ақпаратыңызды рұқсатсыз кіруден, пайдаланудан немесе жария етуден қорғау үшін ақылға қонымды қауіпсіздік шараларын ұсынамыз. Дегенмен, біздің барлық күш-жігерімізге қарамастан, Интернет арқылы деректердің ешқайсысы толығымен қауіпсіз болатынына кепілдік берілмейді.
+
+**5. Шарттар мен шарттармен келісім**
+
+Біздің қолданбаны пайдалану арқылы сіз осы құпиялылық келісімінің шарттарымен келісесіз. Осы шарттармен келіспесеңіз, қызметтерімізді пайдаланбаңыз.
+
+**6. Құпиялық саясатындағы өзгерістер**
+
+Біз осы құпиялылық саясатын өз қалауымыз бойынша өзгерту құқығын сақтаймыз. Кез келген өзгертулер соңғы жаңарту күнімен осы бетте жарияланады. Өзгерістер енгізілгеннен кейін қолданбамызды пайдалануды жалғастыра отырып, сіз жаңартылған шарттармен келісесіз.
+
+**7. Байланыс ақпараты**
+
+Құпиялық саясатымызға қатысты сұрақтарыңыз немесе ұсыныстарыңыз болса, Бейбітшілік 39 мекенжайы бойынша бізге хабарласыңыз.
+
+"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/backBtn2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qūpialylyq saiasaty"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/backBtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backBtn2"
+        app:layout_constraintTop_toTopOf="@+id/backBtn2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
