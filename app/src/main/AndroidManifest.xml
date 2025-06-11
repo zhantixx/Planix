@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Planix"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.AdminActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.HistoryActivity"
             android:exported="false" />
         <activity

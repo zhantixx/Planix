@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
         binding.regTxt.setOnClickListener {
             startActivity(
                 Intent(
-                   this@LoginActivity,
+                    this@LoginActivity,
                     RegistrationActivity::class.java
                 )
             )
@@ -51,7 +51,16 @@ class LoginActivity : AppCompatActivity() {
 
             // Проверяем, что поля не пустые
             if (login.isNotEmpty() && password.isNotEmpty()) {
-                loginUser(login, password)
+                // Check for admin credentials first
+                if (login == "admin" && password == "admin") {
+                    Toast.makeText(this, "Admin kiru satti", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this@LoginActivity, AdminActivity::class.java) // Assuming AdminActivity exists
+                    startActivity(intent)
+                    finish() // Finish LoginActivity so admin can't go back
+                } else {
+                    // If not admin, proceed with regular user login via network request
+                    loginUser(login, password)
+                }
             } else {
                 Toast.makeText(this, "Barlıq auqytlar toltyrılmalı", Toast.LENGTH_SHORT).show()
             }
@@ -97,7 +106,7 @@ class LoginActivity : AppCompatActivity() {
                     }
                 } else {
                     runOnUiThread {
-                            Toast.makeText(this@LoginActivity, "Serverden jawap alalmadym", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@LoginActivity, "Serverden jawap alalmadym", Toast.LENGTH_SHORT).show()
 
                     }
                 }
